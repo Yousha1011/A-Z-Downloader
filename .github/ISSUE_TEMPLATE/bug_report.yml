@@ -36,7 +36,7 @@ body:
     attributes:
       label: A-Z Downloader version
       description: In the app, Help → About.
-      placeholder: "1.1.0"
+      placeholder: "1.1.1"
     validations:
       required: true
   - type: dropdown

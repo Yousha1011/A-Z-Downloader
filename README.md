@@ -112,7 +112,7 @@ It's free, has no ads, needs no account, and installs without administrator righ
 ## Download and install
 
 1. Go to the **[latest release](https://github.com/Yousha1011/A-Z-Downloader/releases/latest)** page.
-2. Under **Assets**, click **`AZDownloader-Setup-1.1.0.exe`** to download it (about 183 MB).
+2. Under **Assets**, click **`AZDownloader-Setup-1.1.1.exe`** to download it (about 183 MB).
 3. Open the downloaded file.
 4. **Windows may show "Windows protected your PC."** This appears because the installer isn't signed with
    a paid code-signing certificate yet. Click **More info**, then **Run anyway**.
@@ -133,7 +133,7 @@ Each release lists the installer's **SHA-256 checksum**. To compare, open PowerS
 and run:
 
 ```powershell
-Get-FileHash .\AZDownloader-Setup-1.1.0.exe -Algorithm SHA256
+Get-FileHash .\AZDownloader-Setup-1.1.1.exe -Algorithm SHA256
 ```
 
 The result should match the checksum on the release page exactly.
@@ -143,8 +143,8 @@ The result should match the checksum on the release page exactly.
 <summary><b>Silent install (for IT administrators)</b></summary>
 
 ```text
-AZDownloader-Setup-1.1.0.exe /S                       install with default settings
-AZDownloader-Setup-1.1.0.exe /S /D=C:\Apps\A-Z Downloader   install to a chosen folder (/D= must come last)
+AZDownloader-Setup-1.1.1.exe /S                       install with default settings
+AZDownloader-Setup-1.1.1.exe /S /D=C:\Apps\A-Z Downloader   install to a chosen folder (/D= must come last)
 "%LOCALAPPDATA%\Programs\A-Z Downloader\uninstall.exe" /uninstall /S   uninstall silently
 ```
 </details>
