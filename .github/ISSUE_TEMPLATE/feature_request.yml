@@ -1,0 +1,18 @@
+name: Feature request
+description: Suggest an idea or an improvement for A-Z Downloader.
+title: "[Idea] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like A-Z Downloader to do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it help you?
+      description: The problem it solves, or how you'd use it.
+    validations:
+      required: true

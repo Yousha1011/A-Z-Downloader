@@ -1,0 +1,68 @@
+name: Bug report
+description: Something in A-Z Downloader doesn't work as it should.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this! Please don't include passwords, cookies or private links — issues are public.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the problem, and include any error message you saw.
+      placeholder: When I click Pause on a video download, the download window closes and…
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open …
+        2. Click …
+        3. See …
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: A-Z Downloader version
+      description: In the app, Help → About.
+      placeholder: "1.1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: windows
+    attributes:
+      label: Windows version
+      options:
+        - Windows 11
+        - Windows 10
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser (if the problem involves the extension)
+      options:
+        - Not related to the browser
+        - Microsoft Edge
+        - Google Chrome
+        - Brave
+        - Opera
+        - Firefox
+  - type: textarea
+    id: logs
+    attributes:
+      label: Extra details (optional)
+      description: For problems with the "Download this video" button, press F12 on the page, open Console, and paste the lines that start with [A-Z Downloader]. Screenshots help too.
+      render: text

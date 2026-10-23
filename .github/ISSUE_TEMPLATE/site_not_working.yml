@@ -1,0 +1,56 @@
+name: Site not working
+description: Videos from a website can't be found or downloaded.
+title: "[Site] "
+labels: ["site support"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please note: services protected by DRM (Netflix, Disney+, Prime Video, Spotify…) are not supported and can't be.
+  - type: input
+    id: site
+    attributes:
+      label: Website
+      placeholder: www.example.com
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link to a public video that fails
+      description: Only share links anyone can open. Don't share private or signed-in-only links.
+      placeholder: https://www.example.com/video/123
+    validations:
+      required: true
+  - type: dropdown
+    id: how
+    attributes:
+      label: How did you try to download it?
+      multiple: true
+      options:
+        - '"Download this video" button in the browser'
+        - Add URL in the app (pasted link)
+        - Right-click → Download with A-Z Downloader
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Did the button appear? What message did you see? Was the file wrong (no sound, short, wrong quality)?
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: A-Z Downloader version
+      description: In the app, Help → About.
+      placeholder: "1.1.0"
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console lines (optional)
+      description: On the video page press F12, open Console, and paste the lines that start with [A-Z Downloader].
+      render: text
